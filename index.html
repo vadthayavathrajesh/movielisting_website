@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>welcome to themoviedb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        body {
+            font-family: Roboto, Arial;
+            background-color: rgb(230, 232, 232);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            margin-top:20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .vertical {
+            border-left: 1px solid rgb(190, 188, 188);
+            height: 855px;
+            position: absolute;
+            left: 18%;
+            margin-top: 54.5px;
+            margin-left: -3px;
+            top: 3px;
+        }
+
+        .slidebar {
+            width: 250px;
+            left: 0;
+            bottom: 0;
+        }
+        .navbar-brand{
+            margin-left:10px;
+        }
+        .vertical2 {
+            border-left: 1px solid rgb(190, 188, 188);
+            height: 40px;
+            position: absolute;
+            left: 18%;
+            margin-top: 5px;
+            margin-left: -3px;
+            margin-bottom: 20px;
+            top: 3px;
+        }
+
+        .box {
+            background-color: white;
+            margin-top: -725px;
+            margin-left: 40px;
+            margin-right: 20px;
+            margin-bottom: 18px;
+            height: 42px;
+        }
+
+        .search {
+            font-weight: lighter;
+            padding-left: 26px;
+            padding-top: 10px;
+            font-size: 17px;
+            color: rgb(7, 7, 7);
+        }
+
+        .box2 {
+            background-color: black;
+            margin-top: -300px;
+            margin-left: 60px;
+            margin-right: 40px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .add {
+            color: white;
+            padding-left: 55px;
+            padding-top: 13px;
+            font-family: Roboto, Arial;
+        }
+
+        .main {
+            margin-left: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .count {
+            height: 50vh;
+            width: 35vh;
+        }
+
+        .count_img {
+            height: 40vh;
+            width: 35vh;
+            padding-right: 25px;
+            border-radius: 5px;
+        }
+
+        .count_name {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            font-size: 20px;
+            margin-top: 6px;
+        }
+
+        .name {
+            font-family: segoe-vf, sans-serif;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .form-control me-2{
+            color: rgb(61, 57, 57);
+        }
+        .im{
+            margin-left: 50px;
+        } 
+        .in{
+            margin-right: 20px;
+            margin-top:5px;
+        }
+        
+    </style>
+
+    <div class="navi">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="im"><img src="Logo movie.jpg"></div>
+                <a class="navbar-brand" href="#">Movies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="vertical2"> </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    </ul>
+                    <div class="fm">
+                        <img class="icon" src="C:\Users\91901\Pictures\Logo movie.jpg" alt="">
+                    </div>
+                    <form class="d-flex" role="search">
+                        <div class="in"><img src="Icon search.jpg"></div>
+                        <input class="form-control me-2" type="search" placeholder="Search something" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div>
+                <h1 class="name">Top Rated Movies</h1>
+            </div>
+            <div class="main1">
+
+            </div>
+
+            <div>
+                <h1 class="name">Popular Movies</h1>
+            </div>
+            <div class="main2">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="vertical"> </div>
+
+    <div class="slidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <div class="box">
+                    <p class="search">Search Results</p>
+                    <span class="nav-link">All Team</span>
+                    <span class="nav-link">Core</span>
+                    <span class="nav-link">Developers</span>
+                    <span class="nav-link">Designers</span>
+                    <span class="nav-link">Mentors</span>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="box2">
+                    <p class="add">+ ADD</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+<script src="index.js"></script>
+
+</html>
